@@ -1,0 +1,24 @@
+[
+  {
+    "model": "mailing.client",
+    "pk": 1,
+    "fields": {
+      "email": "test1@yandex.ru",
+      "first_name": "test1",
+      "last_name": "testov",
+      "comment": "",
+      "owner": 2
+    }
+  },
+  {
+    "model": "mailing.client",
+    "pk": 2,
+    "fields": {
+      "email": "test2@yandex.ru",
+      "first_name": "test2",
+      "last_name": "testov",
+      "comment": "",
+      "owner": 4
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "model": "mailing.mailingmessage",
+    "pk": 1,
+    "fields": {
+      "subject": "test",
+      "letter": "test",
+      "owner": 2
+    }
+  },
+  {
+    "model": "mailing.mailingmessage",
+    "pk": 2,
+    "fields": {
+      "subject": "test2",
+      "letter": "test2",
+      "owner": 4
+    }
+  }
+]
