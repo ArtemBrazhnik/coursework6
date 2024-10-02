@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'coursework6',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': os.getenv('NAME'),
+        'USER': os.getenv('USER'),
+        'PASSWORD': os.getenv('PASSWORD'),
+        'HOST': os.getenv('HOST'),
+        'PORT': os.getenv('PORT')
             }
 }
 
@@ -155,6 +155,7 @@ AUTH_USER_MODEL = "users.User"
 
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
+LOGIN_URL = '/users/'
 
 CACHE_ENABLED = True
 if CACHE_ENABLED:
